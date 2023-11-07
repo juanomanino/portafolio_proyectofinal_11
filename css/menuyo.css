@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+    /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url('/img/fondoy.png');
+    background-size: cover;
+
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+.jn{
+    font-family: Merriweather;
+
+    margin-left: -10em;
+}
+.header {
+    background-color: #182532;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s; /* Agregar transición de color de fondo */
+}
+
+.header:hover {
+    background-color: #613c3c; /* Cambia el color de fondo al pasar el cursor sobre el encabezado */
+}
+
+.header .logo img {
+    max-width: 100px;
+}
+
+.header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .menu ul li {
+    font-size: 16px;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.header .menu ul li a:hover {
+    color: #FFA500; /* Cambia de color al pasar el cursor sobre los enlaces */
+}
+
+
+
+
+.header .logo img {
+    max-width: 150px;
+
+}
+
+.header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .menu ul li {
+    font-family:'Hind Guntur' ;
+    font-size: 1.3em;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.header .menu ul li a:hover {
+    color: #ff881a; /* Cambia de color al pasar el cursor sobre los enlaces */
+}
+/* Fin header */
+
+
+
+/* Estilo de la sección de botones */
+.access-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Estilo de los botones */
+button {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #fff;
+}
+
+
+
+/* Estilo para el botón de la Página 3 */
+.pagina3 {
+    background-image: url('imagen_pagina3.jpg');
+    background-size: cover;
+    font-size: 1.8em;
+    background-position: center;
+    background-color: #27ae60;
+    transition: 0.4s;
+}
+
+.pagina3:hover{
+    background-color: #613c3c;
+}
+/* Estilo para el botón de la Página 4 */
+.pagina4 {
+    background-image: url('imagen_pagina4.jpg');
+    background-size: cover;
+    font-size: 1.8em;
+    background-position: center;
+    background-color: #f39c12;
+    transition: 0.4s;
+
+}
+.pagina4:hover{
+    background-color: #613c3c;
+}
+
+/* Estilo para el botón de la Página 5 */
+.pagina5 {
+    background-size: cover;
+    font-size: 1.8em;
+    color:aqua;
+    background-position: center;
+    background-color: #9b59b6;
+    transition: 0.4s;
+
+}
+.pagina5:hover{
+    background-color: #613c3c;
+}

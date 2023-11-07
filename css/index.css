@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+    /* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+.jn{
+    font-family: Merriweather;
+
+    margin-left: -10em;
+}
+.header {
+    background-color: #182532;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s; /* Agregar transición de color de fondo */
+}
+
+.header:hover {
+    background-color: #613c3c; /* Cambia el color de fondo al pasar el cursor sobre el encabezado */
+}
+
+.header .logo img {
+    max-width: 100px;
+}
+
+.header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .menu ul li {
+    font-size: 16px;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.header .menu ul li a:hover {
+    color: #FFA500; /* Cambia de color al pasar el cursor sobre los enlaces */
+}
+
+
+
+
+.header .logo img {
+    max-width: 150px;
+
+}
+
+.header .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header .menu ul li {
+    font-family:'Hind Guntur' ;
+    font-size: 1.3em;
+}
+
+.header .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.header .menu ul li a:hover {
+    color: #ff881a; /* Cambia de color al pasar el cursor sobre los enlaces */
+}
+/* Fin header */
+
+/* Estilo de la sección de "Inicio" con imagen de fondo */
+
+.full-screen-image {
+    background-color: aqua;
+    background-image: url('/img/registro1.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    height: 20em;
+}
+
+.full-screen-image h1 {
+    color: #ffffff;
+    text-shadow:4px 4px 4px rgba(0, 0, 0, 1);
+    font-family: Merriweather;
+    font-size: 36px;
+    margin: 0;
+    margin-top: 0.7em;
+    margin-bottom: 2em;
+}
+.full-screen-image p{
+    color: #79420e;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    font-size: 36px;
+    font-weight: 500;
+    font-family: Montserrat;
+    margin: 0;
+    margin-top: 5em;
+
+
+}
+
+.full-screen-image p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.btn-registro {
+    display: inline-block;
+    background-color: #FFA500;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: Hind Gurtur;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-registro:hover {
+    background-color: #63b0af; /* Cambia de color al pasar el cursor sobre el botón */
+}
+
+/* Estilo de las secciones de contenido */
+.content-section {
+    padding: 40px;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footdiv h3 {
+    font-size: 20px;
+}
+
+.content-section h1{
+    font-family: 'Merriweather';
+
+}
+.content-section p{
+    font-family: Montserrat;
+    font-size: 1.2em;
+}
+
+.content-section .btn-d{
+    display: inline-block;
+    background-color: #63b0af;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: Hind Gurtur;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.content-section .btn-d:hover {
+    background-color: #ff881a; /* Cambia de color al pasar el cursor sobre el botón */
+}

@@ -6,11 +6,11 @@
 1. Pagina Principal (index.html)
 2. Página sobre mi (yo.html)
 3. Página sobre los servicios/productos que ofrezco (servicio.html)
-4. Página de Portafolio. Mis proyectos y lo que soy capa de hacer (port.html)
+4. Página de Portafolio. Mis proyectos y lo que soy capa de hacer (port.html)   NO
 5. Página sobre mi carrera (carrera.html)
-6. Página de la tienda (tienda.html)
+6. Página para poner mi información de contacto (contacto.html) 
 7. Blog o Foro (foro.html o foro.php) FALTA
-8. Página para poner mi información de contacto (contacto.html)
+8. Página de la tienda (tienda.html)
 9. Página para Registrarse (register.html)
 10. Página para para Iniciar Sesión (login.html)
 11. Carpeta de estilos CSS (/css/)
