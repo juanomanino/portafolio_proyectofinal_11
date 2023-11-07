@@ -2,7 +2,7 @@
     DEFINE('USER', 'root');
     DEFINE('PW', '');
     DEFINE('HOST', 'localhost');
-    DEFINE('BD', 'Registrador');
+    DEFINE('BD', 'JnCodingBD');
 
     //Conexion a la BD
     $conexion = mysqli_connect(HOST, USER, PW, BD);

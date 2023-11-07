@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí</title>
-    <link rel="stylesheet" type="text/css" href="./css/menuyo.css"> <!-- Enlaza tu archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/register.css"> <!-- Enlaza tu archivo CSS -->
 </head>
 <body>
     <header class="header">
@@ -28,46 +28,52 @@
             </ul>
         </nav>
     </header>
-    
+    <br>
     <div id= "redondear">
-                <form name = "formulario" method = "post" action="register.php">
-                    <br>Nombre Completo: <input type = "text" name = "nombre" autofocus required placeholder = "Digite su nombre" size = "30">
-                    <br>Contraseña: <input type = "text" name = "contrase" required placeholder = "Digite la contraseña que desea establecer" size = "40">
+                <form name = "formulario" method = "post" action="register.php" class="formu">
+                    
+                    <br>Nombre Completo: <input type = "text" name = "nombres" autofocus required placeholder = "Digite su nombre" size = "30">
+                    <br>Apellido Completo: <input type = "text" name = "apellidos" required placeholder = "Digite su apellido" size = "30">
+                    <br>Contraseña: <input type = "password" name = "contraseña" required placeholder = "Digite la contraseña que desea establecer" size = "40">
                     <br>Correo Electronico: <input type = "text" name = "correo" required placeholder = "Digite su correo" size = "40">
                     <br>Teléfono: <input type = "text" name = "telefono" required placeholder = "Digite teléfono" size = "20">
+                    <br>Fecha de Nacimiento: <input type = "date" name = "fecha_nac" required placeholder = "Digite su Fecha de Nacimiento" size = "10">
                    
                     <br>
                     <input type = "submit" name = "enviar" value = "Guardar Registro">
                     <input type = "reset" name = "limpiar" value = "Reestablecer campos">
                 </form>
     </div>
-
+        <!-- Código PHP -->
+      
     <?php
-            if(isset($_POST['enviar']))
+        if(isset($_POST['enviar']))
+        {
+            require('conexion.php');
+
+            $nombres = $_POST['nombres'];
+            $apellidos = $_POST['apellidos'];
+            $contraseña = $_POST['contraseña'];
+            $correo = $_POST['correo'];
+            $telefono = $_POST['telefono'];
+            $fecha_nac = $_POST['fecha_nac'];
+
+            
+            $insertar_registro = "INSERT INTO Usuario (nombres, apellidos, contraseña, correo, telefono, fecha_nac) VALUES ('$nombres','$apellidos', '$contraseña', '$correo', ' $telefono', '$fecha_nac')";
+
+            $respuesta = mysqli_query($conexion, $insertar_registro) or trigger_error("Error en la consulta MySQL: ".mysqli_error($conexion));
+
+            if($respuesta)
             {
-                require('conexion.php');
-
-                $nombre = $_POST['nombre'];
-                $contraseña = $_POST['contraseña'];
-                $correo = $_POST['correo'];
-                $telefono = $_POST['telefono'];
-
-                
-                $insertar_registro = "INSERT INTO Usuario (nombre, contraseña, correo, telefono) VALUES ('$nombre', '$contraseña', '$correo')";
-
-                $respuesta = mysqli_query($conexion, $register) or trigger_error("Error en la consulta MySQL: ".mysqli_error($conexion));
-
-                if($respuesta)
-                {
-                    echo '<h1>Registro grabado</h1>';
-                }
-                else
-                {
-                    echo '<<h1>No se ha GRABADO el registro</h1>';
-                }
-
-                mysqli_close($conexion);
+                echo '<h1>Registro grabado</h1>';
             }
-        ?>
+            else
+            {
+                echo '<<h1>No se ha GRABADO el registro</h1>';
+            }
+
+            mysqli_close($conexion);
+        }
+    ?>
     </body>
 </html>
